@@ -1,0 +1,599 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"w",
+				"width"
+			],
+			[
+				"re",
+				"replace"
+			],
+			[
+				"c",
+				"cout"
+			],
+			[
+				"in",
+				"income"
+			],
+			[
+				"m",
+				"main"
+			],
+			[
+				"ios",
+				"iostream"
+			],
+			[
+				"clss",
+				"class"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"r",
+				"required"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"f",
+				"footer"
+			],
+			[
+				"b",
+				"body"
+			],
+			[
+				"s",
+				"style"
+			],
+			[
+				"fo",
+				"footer"
+			],
+			[
+				"avg",
+				"avg_tat"
+			],
+			[
+				"av",
+				"avgTAT"
+			],
+			[
+				"Pro",
+				"process"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"nab",
+				"navbar-nav"
+			],
+			[
+				"h",
+				"h1"
+			],
+			[
+				"MI",
+				"MINI"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"pri",
+				"printf"
+			],
+			[
+				"pr",
+				"printf"
+			],
+			[
+				"P",
+				"printf"
+			],
+			[
+				"T",
+				"TAT_AVG"
+			],
+			[
+				"te",
+				"temp2"
+			],
+			[
+				"tem",
+				"temp2"
+			],
+			[
+				"p",
+				"printf"
+			],
+			[
+				"_",
+				"$_GET"
+			],
+			[
+				"pro",
+				"products"
+			],
+			[
+				"jp",
+				"jpeg"
+			],
+			[
+				"j",
+				"jpeg"
+			],
+			[
+				"l",
+				"localhost"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"ec",
+				"echo"
+			],
+			[
+				"lo",
+				"localhost"
+			],
+			[
+				"sys",
+				"system()"
+			],
+			[
+				"g",
+				"$_GET"
+			],
+			[
+				"ar",
+				"argv"
+			],
+			[
+				"exp",
+				"explode()"
+			],
+			[
+				"fget",
+				"fgets()"
+			],
+			[
+				"_p",
+				"_POST"
+			],
+			[
+				"_G",
+				"$_GET"
+			],
+			[
+				"_GE",
+				"$_GET"
+			],
+			[
+				"for",
+				"foreach"
+			],
+			[
+				"ac",
+				"action"
+			],
+			[
+				"t",
+				"temp"
+			],
+			[
+				"fun",
+				"func_get_arg()"
+			],
+			[
+				"a",
+				"argc"
+			],
+			[
+				"fu",
+				"func_get_arg()"
+			],
+			[
+				"co",
+				"commet_by"
+			],
+			[
+				"is",
+				"is_array()"
+			],
+			[
+				"i",
+				"if"
+			],
+			[
+				"uns",
+				"unset()"
+			],
+			[
+				"stid",
+				"stdio.h"
+			],
+			[
+				"pa",
+				"passwords"
+			],
+			[
+				"lsa",
+				"lastpos"
+			],
+			[
+				"fl",
+				"flag"
+			],
+			[
+				"sr",
+				"srlen"
+			],
+			[
+				"bu",
+				"buf"
+			],
+			[
+				"n",
+				"Inc"
+			],
+			[
+				"ch",
+				"char"
+			],
+			[
+				"sd",
+				"stdlib"
+			],
+			[
+				"prin",
+				"printf"
+			],
+			[
+				"Pr",
+				"print_array"
+			],
+			[
+				"prn",
+				"printf"
+			],
+			[
+				"fr",
+				"for"
+			],
+			[
+				"cla",
+				"class"
+			],
+			[
+				"me",
+				"method"
+			],
+			[
+				"My",
+				"Myclass"
+			],
+			[
+				"Co",
+				"Compute"
+			],
+			[
+				"pt",
+				"printf"
+			],
+			[
+				"C",
+				"CircleArea"
+			],
+			[
+				"R",
+				"RectArea"
+			],
+			[
+				"S",
+				"SquareArea"
+			],
+			[
+				"di",
+				"discount_percentage"
+			],
+			[
+				"d",
+				"discounted_price"
+			],
+			[
+				"dis",
+				"discount_amount"
+			],
+			[
+				"stin",
+				"string"
+			],
+			[
+				"I",
+				"Insert"
+			],
+			[
+				"std",
+				"stdio.h\tstandard header"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/rahul/OneDrive/Desktop/papu lab/everybody.py",
+		"/C/Users/rahul/Downloads/cat.c",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI/cat2.c",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI/templates/MINI/login.html",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI/templates/MINI/register.html",
+		"/C/Users/rahul/OneDrive/Desktop/hk.c",
+		"/C/Users/rahul/OneDrive/Desktop/hk.cpp",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI/admin.py",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/VIT/OS/lab/test/Question 1/labtest.sh",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI_project/settings.py",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI/models.py",
+		"/C/Users/rahul/Downloads/asas.html",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI/templates/MINI/main.html",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI/templates/MINI/backup/home.html",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI/urls.py",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI/views.py",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI/templates/MINI/index.html",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI/templates/MINI/backup/signin.html",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/VIT/OS/lab/3rd_week/programs/SJF.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/VIT/OS/lab/3rd_week/programs/priority.c",
+		"/C/Users/rahul/Downloads/Shortest Remaining Time First/srtf.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/VIT/OS/lab/3rd_week/programs/deadlock.c",
+		"/C/Users/rahul/OneDrive/Desktop/Django/MINI_project/MINI_project/urls.py",
+		"/D/bootstrap-5.1.1-examples/bootstrap-5.1.1-examples/sign-in/index.html",
+		"/D/bootstrap-5.1.1-examples/bootstrap-5.1.1-examples/sidebars/index.html",
+		"/C/Users/rahul/Downloads/Process Scheduling Solver.html",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/VIT/OS/lab/3rd_week/programs/SRTF.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/VIT/OS/lab/3rd_week/programs/SRTF",
+		"/E/network-config",
+		"/E/user-data",
+		"/D/network-config",
+		"/D/user-data",
+		"/F/network-config",
+		"/C/xampp/htdocs/signup.php",
+		"/C/xampp/htdocs/lahtp/myfirst.php",
+		"/C/xampp/htdocs/lahtp/showtable.php",
+		"/C/xampp/htdocs/lahtp/table1.php",
+		"/C/xampp/htdocs/elixer/index.php",
+		"/C/xampp/htdocs/lahtp/first.php",
+		"/C/xampp/htdocs/lahtp/sg.php",
+		"/C/xampp/htdocs/lahtp/table.php",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/php/ads.php",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/php/flie.php",
+		"/C/xampp/htdocs/lahtp/index.html",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/php/function.php",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/php/control.php",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/php/first.php",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/flie.txt",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/file.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/php/table.html",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/game.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/password_checker/class code/array.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/password_checker/class code/password1.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/game1.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/password_checker/class code/passlib.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/password_checker/class code/password.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/strfunc.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/zeroflag.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/hash#.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/dma.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/python/incometax.py",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/password_checker/class code/passwords.txt",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/ascii.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/pass_verification.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/password.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/bufferoverflow.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/buffer.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/check_vowel.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/fact_aruguments.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/argc.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/array.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/pointers.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/helloworld.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/Desktop/api/lahtp4/programs/c/hel.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/cpp/arithimatic.cpp",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/cpp/class1.cpp",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/cpp/class.cpp",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/cpp/a.out",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/c/problem8lahtp.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/c/problem6lahtp.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/c/problem5lahtp.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/c/problem4lahtp.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/c/problem3lahtp.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/c/problem2lahtp.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/cpp/pat.cpp",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/c/noofdigits.c",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/cpp/datatypes.cpp",
+		"/C/Users/rahul/OneDrive/Desktop/Desktop/api/lahtp4/programs/cpp/helloworld.cpp",
+		"/C/Users/rahul/OneDrive/Desktop/api/notes/programs/Request.py"
+	],
+	"find":
+	{
+		"height": 47.2
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 45.6
+	},
+	"input":
+	{
+		"height": 57.6
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 88.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 206.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
