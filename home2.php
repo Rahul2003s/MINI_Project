@@ -251,14 +251,6 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
                                             <td>Andhra Pradesh</td>
                                             <td>Team no:12</td>
                                         </tr>
-                                      <!--   <tr>
-                                            <td>Airi Satou</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>2020</td>
-                                            <td>Velore</td>
-                                            <td>Team no:12</td>
-                                        </tr> -->
                                     </tbody>
                                 </table>
                             </div>
