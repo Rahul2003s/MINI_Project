@@ -1,8 +1,13 @@
 <?php
 include 'auth.php';
 
-function FunctionName($value='')
- {
- 	// code...
- } 
+
+//check wheather the student details are in DB
+function verify_student($username){
+ 	
+}  
+
+function verify_teacher($username){
+
+}
 ?>
