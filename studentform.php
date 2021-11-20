@@ -1,3 +1,40 @@
+<?php 
+include 'functions/student.php';
+$flag;
+if (isset($_COOKIE['username']) and isset($_COOKIE['token']) and isset($_COOKIE['user_id'])) {
+	$username=$_COOKIE['username'];
+	$user_id=$_COOKIE['user_id'];
+	if(verify_privilege($username)==1){
+		if (verify_student($username)==1) {
+			header("Location: /home1.php");
+		}else{
+			// echo ".";
+			if (isset($_POST['F_name']) and isset($_POST['L_name']) and isset($_POST['branch']) and isset($_POST['batch']) and isset($_POST['Registration_No']) and isset($_POST['course']) and isset($_POST['gender'])) {
+				$user_id=$_COOKIE['user_id'];
+				$username=$_COOKIE['username'];
+				$f_name=$_POST['F_name'];
+				$l_name=$_POST['L_name'];
+				$branch=$_POST['branch'];
+				$gender=$_POST['gender'];
+				$batch=$_POST['batch'];
+				$team_id=rand(1,16);
+				if(register_student($user_id,$username,$f_name,$l_name,$reg_no,$course,$branch,$gender,$batch,$team_id)==1){
+					$flag=1;
+					header("Location: /home1.php");
+				}else{
+					$flag=0;
+				}
+			}else{
+				$flag=-1;
+			}
+		}
+	}
+}else{
+	// header("Location: signin.php");
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -16,10 +53,15 @@
 </style>
 <body>
 	<div class="container">
-		
+		<?php
+		if ($flag==0) { ?>
+		 	<div class="alert alert-danger" role="alert">
+          		Invalid entry!!!....
+        	</div>
+		 <?php } ?>
 		<div class="title" align="center">Registration</div>
 		<!-- <img class="mb-4" id="logo" src="assets/img/logo1.jpg" alt="" width="300px" height="150px" align="center"> -->
-		<form action="sg.php" method="POST">
+		<form action="studentform.php" method="POST">
 			<div class="user-details">
 				<div class="input-box">
 					<span class="details">First Name</span>
@@ -89,26 +131,16 @@
 			</div>
 
 			</div>
-			<div class="gender-details">
-				<input type="radio" name="gender" id="dot-1">
-				<input type="radio" name="gender" id="dot-2">
-				<input type="radio" name="gender" id="dot-3">
-				<span class="gender-title">Gender</span>
-				<div class="category">
-					<label for="dot-1">
-						<span class="dot one"></span>
-						<span class="gender">Male</span>
-					</label>
-					<label for="dot-2">
-						<span class="dot two"></span>
-						<span class="gender">Female</span>
-					</label>
-					<label for="dot-3">
-						<span class="dot three"></span>
-						<span class="gender">Transgender</span>
-					</label>
-				</div>
-			</div>
+			<div>
+				<span class="select">Gender</span>
+	            <select name="gender" class="dropbox" required>
+	                <option><-Select gender-></option>
+	                <option value="Male">Male</option>
+	                <option value="Female">Female</option>
+	                <option value="Transgender">Transgender</option>
+                </select>
+	        </div> 
+	        <br>
 			<div class="button">
 				<input type="submit" value="submit">
 			</div>

@@ -6,7 +6,11 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
     $token=$_COOKIE['token'];
     if (verify_session($username,$token)) {
         if (verify_privilege($username)==1) {
-            header("Location: /home1.php");
+            if (verify_student($username)) {
+              header("Location: /home1.php");
+            }else{
+              header("Location: /studentform.php");
+            }
         }elseif (verify_privilege($username)==2) {
             header("Location: /home2.php");
         }

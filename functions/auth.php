@@ -132,7 +132,13 @@ function add_session($username,$token,$expiry){
 	if (mysqli_query($db_conn, $query)){
 		setcookie('username', $username, $expiry, '/', 'localhost');
 		setcookie('token', $token, $expiry, '/', 'localhost');
-
+		$query1="SELECT user_id FROM miniproject.authentication WHERE username='$username';";
+		$result=mysqli_query($db_conn, $query1);
+		if (mysqli_num_rows($result)==1){
+			$row=mysqli_fetch_assoc($result);
+			$user_id=$row['user_id'];
+			setcookie('user_id', $user_id, $expiry, '/', 'localhost');
+		}
 		return 1;
 	} else {
 		return mysqli_error($db_conn);
