@@ -6,7 +6,11 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
 	$username=$_COOKIE['username'];
 	$token=$_COOKIE['token'];
 	if (verify_session($username,$token)) {
-		echo "";
+		if (verify_student($username)) {
+            // echo "."
+        }else{
+            header("Location: /studentform.php");
+        }
 	}else{
 		header("Location: /signin.php");
 	}

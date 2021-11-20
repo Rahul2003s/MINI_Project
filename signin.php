@@ -12,7 +12,11 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
         header("Location: /studentform.php");
       }
     }elseif (verify_privilege($username)==2) {
-      header("Location: /home2.php");
+      if (verify_teacher($username)==1) {
+        header("Location: /home1.php");
+      }else{
+        header("Location: /studentform.php");
+      }
     } 
   }
 }
