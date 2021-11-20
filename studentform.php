@@ -29,6 +29,8 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token']) and isset($_COOKIE[
 				$flag=-1;
 			}
 		}
+	}elseif (verify_privilege($username)==2) {
+		header("Location: home2.php");
 	}
 }else{
 	header("Location: signin.php");
