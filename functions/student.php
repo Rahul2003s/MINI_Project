@@ -37,7 +37,7 @@ function register_student($user_id,$username,$f_name,$l_name,$reg_no,$course,$br
     if(mysqli_query($db_conn,$query)){
         return 1;
     }else{
-        return 0;
+        return mysqli_error($db_conn);
     }
 
 }

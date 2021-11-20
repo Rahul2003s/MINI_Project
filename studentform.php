@@ -8,17 +8,18 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token']) and isset($_COOKIE[
 		if (verify_student($username)==1) {
 			header("Location: /home1.php");
 		}else{
-			// echo ".";
-			if (isset($_POST['F_name']) and isset($_POST['L_name']) and isset($_POST['branch']) and isset($_POST['batch']) and isset($_POST['Registration_No']) and isset($_POST['course']) and isset($_POST['gender'])) {
+			if (isset($_POST['F_name']) and isset($_POST['L_name']) and isset($_POST['branch']) and isset($_POST['batch']) and isset($_POST['Registration_No']) and isset($_POST['course']) and isset($_POST['gender']) and isset($_COOKIE['username']) and isset($_COOKIE['user_id'])) {
 				$user_id=$_COOKIE['user_id'];
+				$reg_no=$_POST['Registration_No'];
 				$username=$_COOKIE['username'];
 				$f_name=$_POST['F_name'];
 				$l_name=$_POST['L_name'];
 				$branch=$_POST['branch'];
 				$gender=$_POST['gender'];
+				$course=$_POST['course'];
 				$batch=$_POST['batch'];
-				$team_id=rand(1,16);
-				if(register_student($user_id,$username,$f_name,$l_name,$reg_no,$course,$branch,$gender,$batch,$team_id)==1){
+				$team_id=12;
+				if(register_student($user_id,$username,$f_name,$l_name,$reg_no,$course,$branch,$gender,$batch,$team_id)){
 					$flag=1;
 					header("Location: /home1.php");
 				}else{
@@ -30,7 +31,7 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token']) and isset($_COOKIE[
 		}
 	}
 }else{
-	// header("Location: signin.php");
+	header("Location: signin.php");
 }
 ?>
 
