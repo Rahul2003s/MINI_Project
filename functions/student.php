@@ -29,7 +29,6 @@ function verify_teacher($username) {
     }
 }
 
-
 //register a student it will add the student to the student table in DB by taking input from user in web!!.
 function register_student($user_id,$username,$f_name,$l_name,$reg_no,$course,$branch,$gender,$batch,$team_id){
     $db_conn=get_db_connection();
