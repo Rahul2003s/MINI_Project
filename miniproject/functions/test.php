@@ -43,21 +43,5 @@ $team_id=12;
 //  echo $flag;
 
 // verify_student($username);
-//register_student($user_id,$username,$f_name,$l_name,$reg_no,$course,$branch,$gender,$batch,$team_id);
-$db_conn=get_db_connection();
-$query="select * from miniproject.teams where team_id=12;";
-$result=mysqli_query($db_conn,$query);
-if ($result) {
-	$rows=mysqli_fetch_assoc($result);
-	print_r($rows);
-	//print_r($rows['team_members']);
-	$team_members=$rows['team_members'];
-	$team_members_arr=explode(',', $team_members);
-	print_r($team_members_arr);
-
-	echo "\n";
-	echo $team_members_arr[1];
-}else{
-	echo "some error";
-}
+register_student($user_id,$username,$f_name,$l_name,$reg_no,$course,$branch,$gender,$batch,$team_id);
 ?></pre> 

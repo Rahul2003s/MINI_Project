@@ -1,6 +1,6 @@
 <?php
 
-include 'functions/student.php';
+include 'functions/auth.php';
 
 if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
 	$username=$_COOKIE['username'];
