@@ -54,6 +54,7 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token']) and isset($_COOKIE[
 		right: 100%;
 	}
 </style>
+
 <body>
 	<div class="container">
 		<?php
@@ -95,13 +96,13 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token']) and isset($_COOKIE[
 	                            <option value="2021">2021</option>
 	                        </select>
 	                    </div> 
-			<div class="input-box">
+			<!-- <div class="input-box">
 				<span class="details">Registration No.</span>
 				<input name="Registration_No" type="text" placeholder="Reg NO." required>
-			</div>
+			</div> -->
 
 			<div>
-				<span class="select" >Course</span>
+				<span class="select" >School</span>
 				<select name="course" class="dropbox" required>
 					<option><-Select course-></option>
 					<option>B.Tech - Biotechnology</option>
