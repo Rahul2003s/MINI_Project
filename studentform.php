@@ -128,6 +128,8 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token']) and isset($_COOKIE[
 					<option>B.Tech - Mechanical Engineering with Minor in Computer Science and Engineering</option>
 					<option>B.Tech - Mechanical Engineering with Minor in Artifical Intelligence and Machine Learning</option>
 					<option>B.Tech - Mechanical Engineering with Minor in Data Science</option>
+					<option>M.Tech. (Integrated) - Computer science and engineering collaboration with virtusa </option>
+					<option>M.Tech. (Integrated) - Computer software engineering </option>
 				</select>
 			</div>
 
