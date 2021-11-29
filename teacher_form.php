@@ -75,8 +75,6 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token']) and isset($_COOKIE[
 					<input name="L_name" type="text" placeholder="Enter your last name" required>
 				</div>
 	                 <!-- dropbox -->
-	                  
-	                    
 	                    <div>
 						    <span class="select" >Branch</span>
 	                        <select class="dropbox" name="branch" required>

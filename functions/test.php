@@ -54,7 +54,6 @@ if ($result) {
 	$team_members=$rows['team_members'];
 	$team_members_arr=explode(',', $team_members);
 	print_r($team_members_arr);
-
 	echo "\n";
 	echo $team_members_arr[1];
 }else{
