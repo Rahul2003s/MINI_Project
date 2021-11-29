@@ -54,7 +54,6 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token']) and isset($_COOKIE[
 		right: 100%;
 	}
 </style>
-
 <body>
 	<div class="container">
 		<?php
