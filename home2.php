@@ -1,6 +1,6 @@
 <?php
 
-include 'functions/auth.php';
+include 'functions/student.php';
 
 if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
 	$username=$_COOKIE['username'];
@@ -224,38 +224,25 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
                                         </tr>
                                     </tfoot>
                                     <tbody>
+                                        <?php 
+                                        $db_conn=get_db_connection();
+                                        $query="SELECT * FROM `miniproject`.`registration_no`;";
+                                        $result=mysqli_query($db_conn,$query);
+                                        if($result){
+                                            while ($row=mysqli_fetch_assoc($result)) {
+                                        ?>
                                         <tr>
-                                            <td>Bharani Kumaran M</td>
-                                            <td>20MIC0080</td>
+                                            <td><?php echo $row['name']; ?></td>
+                                            <td><?php echo $row['reg_no']; ?></td>
                                             <td>Mtech Integrated Computer Science</td>
                                             <td>2020</td>
                                             <td>Chennai</td>
                                             <td>Team no:12</td>
                                         </tr>
-                                        <tr>
-                                            <td>BANDAPALLI DHEEREN</td>
-                                            <td>20MIC0072</td>
-                                            <td>Mtech Integrated Computer Science</td>
-                                            <td>2020</td>
-                                            <td>Vellore</td>
-                                            <td>Team no:12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sakthi Velan KS</td>
-                                            <td>19MIC0126</td>
-                                            <td>Mtech Integrated Computer Science</td>
-                                            <td>2019</td>
-                                            <td>Vellore</td>
-                                            <td>Team no:12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rahul S</td>
-                                            <td>20MIC0117</td>
-                                            <td>Mtech Integrated Computer Science</td>
-                                            <td>2020</td>
-                                            <td>Andhra Pradesh</td>
-                                            <td>Team no:12</td>
-                                        </tr>
+                                        <?php
+                                            }
+                                        }
+                                        ?>
                                     </tbody>
                                 </table>
                             </div>
