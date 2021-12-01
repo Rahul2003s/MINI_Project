@@ -42,4 +42,26 @@ function register_student($user_id,$username,$f_name,$l_name,$reg_no,$course,$br
     }
 
 }
+
+
+function find_team_no($reg_no)
+{
+    $db_conn=get_db_connection();
+    $query="SELECT * FROM `miniproject`.`teams`;";
+    $result=mysqli_query($db_conn,$query);
+    if ($result) {
+        while ($row=mysqli_fetch_assoc($result)) {
+            $team=explode(',', $row['team_members']);
+            foreach ($team as $value) {
+                if ($reg_no == $value) {
+                    $team_id=$row['team_id'];
+                    // echo $team_id;
+                    return $team_id;
+                }
+            }
+        }
+    }
+}
+
+
 ?>

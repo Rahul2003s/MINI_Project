@@ -59,12 +59,30 @@ $team_id=12;
 // }else{
 // 	echo "some error";
 // }
+// $db_conn=get_db_connection();
+// $query="SELECT * FROM `miniproject`.`registration_no`;";
+// $result=mysqli_query($db_conn,$query);
+// if($result){
+// 	while ($row=mysqli_fetch_assoc($result)) {
+//     	print_r($row);
+//     }
+// }
+// find_team_no("20MIC0137");
+
 $db_conn=get_db_connection();
-$query="SELECT * FROM `miniproject`.`registration_no`;";
+$query="SELECT COUNT(*) FROM `miniproject`.`teams`;";
 $result=mysqli_query($db_conn,$query);
-if($result){
-	while ($row=mysqli_fetch_assoc($result)) {
-    	print_r($row);
-    }
+if ($result) {
+    $row=mysqli_fetch_assoc($result);
+    print_r($row);
 }
+
+
+$query1="SELECT COUNT(*) FROM `miniproject`.`registration_no`;";
+$result1=mysqli_query($db_conn,$query1);
+if ($result1) {
+    $row1=mysqli_fetch_assoc($result1);
+    print_r($row1);
+}
+
 ?></pre> 

@@ -152,7 +152,10 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>
-                        <div class="row">
+                        <iframe width="380" height="250"
+                            src="https://www.youtube.com/embed/JA3t27eBL3M">
+                        </iframe>
+                        <!-- <div class="row">
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-primary text-white mb-4" id="team_members">
                                     <div class="card-body">Team members</div>
@@ -180,7 +183,7 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
                                     </div>
                                 </div>
                             </div>
-
+ -->
                         <!-- <div class="card mb-4"> -->
                             <!-- <div class="card-header"> -->
                                 <!-- <i class="fas fa-table me-1"></i> -->

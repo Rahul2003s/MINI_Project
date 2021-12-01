@@ -19,6 +19,24 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
 	header("Location: /signin.php");
 }
 
+$total_team;
+$total_students;
+
+$db_conn=get_db_connection();
+$query="SELECT COUNT(*) FROM `miniproject`.`teams`;";
+$result=mysqli_query($db_conn,$query);
+if ($result) {
+    $row=mysqli_fetch_assoc($result);
+    $total_team=$row['COUNT(*)'];
+}
+
+
+$query1="SELECT COUNT(*) FROM `miniproject`.`registration_no`;";
+$result1=mysqli_query($db_conn,$query1);
+if ($result1) {
+    $row1=mysqli_fetch_assoc($result1);
+    $total_students=$row1['COUNT(*)'];
+}
 ?>
 
 
@@ -79,50 +97,36 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Members</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">file uploaded</a>
+                                    <a class="nav-link" href="team_cards_teach.php">Team cards</a>
                                 </nav>
                             </div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Students   
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="tables.php">Students_details</a>
+                                </nav>
+                            </div>
+                            <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                 Students
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
+                            </a> -->
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        Authentication
+                                    <a class="nav-link collapsed" href="tables.php" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Students
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
                                     <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                            <a class="nav-link" href="register.html">Register</a>
-                                            <a class="nav-link" href="password.html">Forgot Password</a>
-                                        </nav>
-                                    </div>
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        Teams
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="#">Mark</a>
-                                            <a class="nav-link" href="#">file uploaded</a>
-                                            <a class="nav-link" href="#">Members</a>
-                                        </nav>
+                                        
                                     </div>
                                 </nav>
                             </div>
-                            <div class="sb-sidenav-menu-heading">Addons</div>
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Charts
-                            </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Settings
-                            </a>
+                            <div class="sb-sidenav-menu-heading"></div>
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
@@ -141,32 +145,25 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">Team members</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    <center>
+                                    <div class="card-body">Total Teams = <?php echo $total_team; ?></div>
+                                    <center>
+                                    <div class="card-footer d-flex align-items-center justify-content-between" align="center"> 
                                     </div>
+                                    </center>
                                 </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Project details</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
+                                </center>
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Project Upload</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                <center>
+                                    <div class="card-body">Total Students = <?php echo $total_students; ?></div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between" align="center">
                                     </div>
                                 </div>
+                                </center>
                             </div>
-                        <!--     <div class="col-xl-3 col-md-6">
+                          <!--   <div class="col-xl-3 col-md-6">
                                 <div class="card bg-danger text-white mb-4">
                                     <div class="card-body">Danger Card</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
@@ -175,8 +172,8 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
-                        <!-- div class="row">
+                        </div>
+                        <div class="row">
                             <div class="col-xl-6">
                                 <div class="card mb-4">
                                     <div class="card-header">
@@ -230,6 +227,7 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
                                         $result=mysqli_query($db_conn,$query);
                                         if($result){
                                             while ($row=mysqli_fetch_assoc($result)) {
+                                                $team_id=find_team_no($row['reg_no']);
                                         ?>
                                         <tr>
                                             <td><?php echo $row['name']; ?></td>
@@ -237,7 +235,7 @@ if (isset($_COOKIE['username']) and isset($_COOKIE['token'])) {
                                             <td>Mtech Integrated Computer Science</td>
                                             <td>2020</td>
                                             <td>Chennai</td>
-                                            <td>Team no:12</td>
+                                            <td>Team no: <?php echo $team_id; ?></td>
                                         </tr>
                                         <?php
                                             }
