@@ -63,5 +63,27 @@ function find_team_no($reg_no)
     }
 }
 
+function get_project_details($id)
+{
+    $db_conn=get_db_connection();
+    $query="SELECT * FROM `miniproject`.`project` WHERE `project`.`team_id` = $id;";
+    $result=mysqli_query($db_conn,$query);
+    if ($result) {
+        $row=mysqli_fetch_assoc($result);
+        return $row;
+    }
+}
 
+
+function Change_git_link($git_link,$project_id)
+{
+    $db_conn=get_db_connection();
+    $query= "UPDATE `project` SET `project_git_link` = '$git_link' WHERE `project`.`project_id` = $project_id;";
+    $result=mysqli_query($db_conn,$query);
+    if ($result) {
+        return 1;
+    }else{
+        return 0;
+    }
+}
 ?>

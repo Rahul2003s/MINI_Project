@@ -95,7 +95,6 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
     <link href="css/signin.css" rel="stylesheet">
   </head>
   <body class="text-center" style="background-color:#343a40;">
-    <br>
     <center>
     <div class="card" id="card">
     <article class="card-body">
@@ -134,13 +133,13 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
         <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
         <label for="floatingPassword">Password</label>
       </div>
+      <br>
 
-
-      <div class="checkbox mb-3">
+      <!-- <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Remember me
         </label>
-      </div>
+      </div> -->
       <button class="w-100 float-right btn btn-outline-primary" type="submit">Sign in</button>
       <div> <a class="small" href="password.php">Forgot Password?</a></div>
       <div class="small"><a href="signup.php">Need an account? Sign up!</a></div>

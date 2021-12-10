@@ -97,46 +97,15 @@ if ($result) {
                                 Home
                             </a>
                             <div class="sb-sidenav-menu-heading">Interface</div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Teams	
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="team_cards_teach.php">Team cards</a>
-                                </nav>
-                            </div>
-                            <a class="nav-link collapsed" href="tables.php" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            <a class="nav-link" href="team_cards_teach.php" >
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                                Students
-                                
+                                Teams 
+                            </a>
+                            <a class="nav-link" href="table_stud.php" >
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Students 
                             </a>
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        Authentication
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a> -->
-                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <!-- <a class="nav-link" href="login.html">Login</a>
-                                            <a class="nav-link" href="register.html">Register</a>
-                                            <a class="nav-link" href="password.html">Forgot Password</a> -->
-                                        </nav>
-                                    </div>
-                                    <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        Teams
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="#">Mark</a>
-                                            <a class="nav-link" href="#">file uploaded</a>
-                                            <a class="nav-link" href="#">Members</a>
-                                        </nav>
-                                    </div> -->
-                                </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading"></div>
                         </div>
@@ -166,26 +135,34 @@ if ($result) {
                         <div class="container">
                           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                             <?php
-                            for ($i=0; $i <$total_team; $i++) { 
+                            $project_detail;
+                            $db_conn=get_db_connection();
+                            $query="SELECT * FROM `miniproject`.`teams`;";
+                            $result=mysqli_query($db_conn,$query);
+                            if($result){
+                                while ($row=mysqli_fetch_assoc($result)) {
+                                    $team_id=$row['team_id'];
+                                    $team_name=$row['team_name'];
+                                    $team_members=$row['team_members'];
+                                    $project_detail=get_project_details($team_id);
                             ?>
                             <div class="col">
                               <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#343a40"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Team-<?php echo $i+1; ?></text></svg>
-
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#343a40"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Team-<?php echo $team_id; ?></text></svg>
                                 <div class="card-body">
-                                  <p class="card-text"><h4>Project title</h4> with some discription</p>
+                                  <p class="card-text"><h3><?php echo $project_detail['project_name']; ?></h3><?php echo $project_detail['project_dic']; ?></p>
                                   <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                      <button type="button" class="w-100 float-right btn btn-outline-primary">View More</button>
-                                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                      <a href="team_ind_teach.php?id=<?php echo $team_id; ?>" class="btn btn-primary  active" role="button" aria-pressed="true">View More</a>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
+                                    <small class="text-muted">Completed <?php echo $project_detail['project_completed']; ?></small>
                                     </div>
                                     </div>
                                 </div>
                             </div>
                             <?php
                                 }
+                            }
                             ?>
                         </div>
                     </div>

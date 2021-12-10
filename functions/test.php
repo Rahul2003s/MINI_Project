@@ -69,20 +69,25 @@ $team_id=12;
 // }
 // find_team_no("20MIC0137");
 
-$db_conn=get_db_connection();
-$query="SELECT COUNT(*) FROM `miniproject`.`teams`;";
-$result=mysqli_query($db_conn,$query);
-if ($result) {
-    $row=mysqli_fetch_assoc($result);
-    print_r($row);
-}
+// $db_conn=get_db_connection();
+// $query="SELECT COUNT(*) FROM `miniproject`.`teams`;";
+// $result=mysqli_query($db_conn,$query);
+// if ($result) {
+//     $row=mysqli_fetch_assoc($result);
+//     print_r($row);
+// }
 
 
-$query1="SELECT COUNT(*) FROM `miniproject`.`registration_no`;";
-$result1=mysqli_query($db_conn,$query1);
-if ($result1) {
-    $row1=mysqli_fetch_assoc($result1);
-    print_r($row1);
-}
+// $query1="SELECT COUNT(*) FROM `miniproject`.`registration_no`;";
+// $result1=mysqli_query($db_conn,$query1);
+// if ($result1) {
+//     $row1=mysqli_fetch_assoc($result1);
+//     print_r($row1);
+// }
+$git_link;
+$project_id;
+$git_link="https://github.com/Rahul2003s/MINI_Project";
+$project_id=12;
+//Change_git_link($git_link,$project_id);
 
 ?></pre> 
